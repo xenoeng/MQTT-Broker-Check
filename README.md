@@ -13,7 +13,7 @@ Use in conjunction with MQTT Explorer (https://mqtt-explorer.com/) to test conne
   - publishes the current time to the MQTT server every (1) seconds (with time zone offset).
   - subscribes to the topic "inTopic" and prints any messages received to the terminal.
 
-> NOTE
+> [!NOTE]
 > 1) The MQTT server used in this example was a private broker via a local AP.
 > 2) Update for your own broker details or use test.mosquitto.org (and modify as no credentials required).
 > 3) The MQTT server must be running and accessible from the ESP32 device.
