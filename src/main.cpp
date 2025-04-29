@@ -173,6 +173,7 @@ void loop()
     }
     timeClient.getFormattedTime().toCharArray(msg, MSG_BUFFER_SIZE);
     mqttClient.publish(clientId.c_str(), msg);
+    mqttClient.publish((clientId + "/IPaddr").c_str(), WiFi.localIP().toString().c_str()); // Publish the IP address to the MQTT server
   }
 }
 ///////////////////////////////////////////////////////////////////////////////
